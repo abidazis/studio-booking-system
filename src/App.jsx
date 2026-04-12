@@ -263,7 +263,7 @@ export default function App() {
 
   const confirmToWhatsApp = async () => {
     setIsProcessing(true);
-    const waNumber = "6281219966490"; // GANTI NOMOR WA STUDIO
+    const waNumber = "6281370253552"; // GANTI NOMOR WA STUDIO
     const randomCode = Math.floor(1000 + Math.random() * 9000);
     const bookingId = `AYU-${selectedDate.split('-')[2]}-${randomCode}`;
 
@@ -889,7 +889,7 @@ export default function App() {
                   <li className="flex items-center gap-3 text-sm text-zinc-300"><Icons.Check className="w-5 h-5 text-emerald-500" /> 60 Menit per Pertemuan</li>
                   <li className="flex items-center gap-3 text-sm text-zinc-300"><Icons.Check className="w-5 h-5 text-emerald-500" /> Jadwal Fleksibel (Pilih Sendiri)</li>
                 </ul>
-                <a href="https://wa.me/6281234567890?text=Halo%20min,%20saya%20mau%20daftar%20Les%20Drum%20Paket%20Private" target="_blank" rel="noreferrer" className="block w-full text-center bg-zinc-800 hover:bg-emerald-600 text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs transition-all shadow-lg active:scale-95">Daftar Private</a>
+                <a href="https://wa.me/6281370253552?text=Halo%20min,%20saya%20mau%20daftar%20Les%20Drum%20Paket%20Private" target="_blank" rel="noreferrer" className="block w-full text-center bg-zinc-800 hover:bg-emerald-600 text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs transition-all shadow-lg active:scale-95">Daftar Private</a>
               </div>
             </Reveal>
 
@@ -903,7 +903,7 @@ export default function App() {
                   <li className="flex items-center gap-3 text-sm text-zinc-300"><Icons.Check className="w-5 h-5 text-emerald-500" /> 60 Menit per Pertemuan</li>
                   <li className="flex items-center gap-3 text-sm text-zinc-300"><Icons.Check className="w-5 h-5 text-emerald-500" /> Maksimal 2 Orang dalam 1 Sesi</li>
                 </ul>
-                <a href="https://wa.me/6281234567890?text=Halo%20min,%20saya%20mau%20daftar%20Les%20Drum%20Paket%20Reguler" target="_blank" rel="noreferrer" className="block w-full text-center bg-zinc-800 hover:bg-emerald-600 text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs transition-all shadow-lg active:scale-95">Daftar Reguler</a>
+                <a href="https://wa.me/6281370253552?text=Halo%20min,%20saya%20mau%20daftar%20Les%20Drum%20Paket%20Reguler" target="_blank" rel="noreferrer" className="block w-full text-center bg-zinc-800 hover:bg-emerald-600 text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs transition-all shadow-lg active:scale-95">Daftar Reguler</a>
               </div>
             </Reveal>
           </div>
@@ -919,7 +919,7 @@ export default function App() {
             </div>
             <h3 className="text-2xl font-black text-white italic uppercase tracking-widest">Ayu<span className="text-violet-500">Studio</span></h3>
             <p className="text-[10px] md:text-xs tracking-[0.3em] uppercase font-bold text-zinc-600 px-4 max-w-md mx-auto leading-relaxed">
-              &copy; 2026 Ayu Studio Booking System. <br className="md:hidden" /> Developed for Professional Musicians.
+              &copy; 2026 Ayu Studio Booking System. <br className="md:hidden" /> Developed by Abid Web Projects.
             </p>
           </div>
         </Reveal>
