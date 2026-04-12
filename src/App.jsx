@@ -252,7 +252,9 @@ export default function App() {
       setCheckoutStep('payment');
       setIsTimerRunning(true);
       showToast("Jadwal sementara dikunci. Silakan lakukan pembayaran.", "info");
-      document.getElementById('booking-summary')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      
+      // KODE YANG DIUBAH:
+      document.getElementById('checkout-area')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     } catch (e) { 
       showToast("Gagal mengunci jadwal, coba lagi.", "error"); 
     }
@@ -726,7 +728,7 @@ export default function App() {
             </div>
 
             {/* KANAN: DYNAMIC CHECKOUT AREA */}
-            <div className="xl:col-span-1 w-full min-w-0">
+            <div className="xl:col-span-1 w-full min-w-0" id="checkout-area">
               <Reveal delay={500}>
                 <div className="bg-zinc-900/90 backdrop-blur-xl p-6 md:p-8 rounded-2xl md:rounded-[2.5rem] border border-zinc-700/50 sticky top-28 shadow-2xl w-full box-border">
                   
@@ -939,7 +941,7 @@ export default function App() {
             </span>
           </div>
           <button 
-            onClick={() => { document.getElementById('booking-summary')?.scrollIntoView({ behavior: 'smooth' }); }}
+            onClick={() => { document.getElementById('checkout-area')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); }}
             className="shrink-0 bg-violet-600 hover:bg-violet-500 text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl transition-all active:scale-95 flex items-center justify-center gap-2 shadow-lg shadow-violet-900/50"
           >
             Selesaikan <Icons.ChevronRight className="w-4 h-4" />
