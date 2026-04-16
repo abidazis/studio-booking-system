@@ -340,7 +340,7 @@ export default function App() {
       {/* FLOATING MUSIC BUTTON */}
       <button 
         onClick={toggleMusic} 
-        className={`fixed bottom-6 left-6 md:bottom-10 md:left-10 z-[100] w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 shadow-2xl group ${isPlaying ? 'bg-violet-600 shadow-violet-600/50' : 'bg-zinc-900 border border-zinc-700 hover:border-violet-500 hover:scale-110'}`}
+        className={`fixed bottom-28 left-6 md:bottom-28 xl:bottom-10 md:left-10 z-[100] w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 shadow-2xl group ${isPlaying ? 'bg-violet-600 shadow-violet-600/50' : 'bg-zinc-900 border border-zinc-700 hover:border-violet-500 hover:scale-110'}`}
         title="Play/Pause Background Music"
       >
          <Icons.Disc className={`w-5 h-5 md:w-6 md:h-6 ${isPlaying ? 'text-white animate-[spin_3s_linear_infinite]' : 'text-zinc-400 group-hover:text-white'}`} />
